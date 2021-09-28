@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt  # 画图
 import sympy as sp  # 函数库
 import interval as iv  # 区间库
 
+
+
 '''x = sp.symbols("x")  # 定义未知数x，x为非空集合中的一个未知元素。
 y = sp.solve(((x - 2) ** 2) * ((x - 3) ** 3) * ((x - 4) ** 4), x)  # 函数关系式，该方法是在函数等用0的时候参与运算求解，得到的结果为数组。
 print(y) #求函数等于0的时候的解
