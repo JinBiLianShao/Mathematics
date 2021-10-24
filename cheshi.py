@@ -65,7 +65,13 @@ y3 = 1+x3/x3
 plt.plot(x3,y3)
 plt.ylim(-5,5)
 plt.show()
-'''
+’’’
 num = input()
 data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(data[0])
+'''
+x = np.arange(-10, 10, 0.1)
+y = 2 ** x
+plt.plot(x, y)
+plt.ylim(-5, 5)
+plt.show()

@@ -53,7 +53,7 @@ plt.show()
 
 # 指数函数：非线性
 x = np.arange(-1, 3, 0.1)
-y = 2 ** x
+y = -2 ** x
 plt.plot(x, y)
 plt.ylim(-2, 25)
 plt.show()
