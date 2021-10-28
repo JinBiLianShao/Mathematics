@@ -1,12 +1,13 @@
 '''
     python基础
 '''
+'''
 import numpy as np  # 计算
 import math
 import matplotlib.pyplot as plt  # 画图
 import sympy as sp  # 函数库
 import interval as iv  # 区间库
-
+'''
 
 
 '''x = sp.symbols("x")  # 定义未知数x，x为非空集合中的一个未知元素。
@@ -70,8 +71,48 @@ num = input()
 data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(data[0])
 '''
+'''
 x = np.arange(-10, 10, 0.1)
 y = 2 ** x
 plt.plot(x, y)
 plt.ylim(-5, 5)
+plt.show()
+'''
+'''
+class Man:
+    def __init__(self, name):
+        self.name = name
+        print("我进入了这个类喽！")
+
+    def hello(self):
+        print("hello" + self.name)
+
+    def goodbye(self):
+        print("再见" + self.name)
+
+m = Man("连思鑫")
+m.hello()
+m.goodbye()
+'''
+
+'''
+import numpy as np
+import matplotlib.pyplot as plt
+#生成数据
+x = np.arange(0, 6, 0.1) # 以0.1为单位，生成0到6的数据
+y1 = np.sin(x)
+y2 = np.cos(x)
+# 绘图
+plt.plot(x, y1, label="sin")
+plt.plot(x, y2, linestyle="--", label="cos") # 用虚线表示
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("sin & cos")
+plt.legend()
+plt.show()
+'''
+import matplotlib.pyplot as plt
+from matplotlib.image import imread
+img = imread('001.jpg') # 读入图像（设定合适的路径！）
+plt.imshow(img)
 plt.show()
